@@ -75,10 +75,10 @@ public class ATM {
     }
 
     public void audit() throws IOException {
-        PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("AccountAudit.txt")));
+        PrintWriter fileWriter = new PrintWriter(new BufferedWriter(new FileWriter("AccountAudit.txt")));
         for (Map.Entry<String, Double> element : accounts.entrySet()) {
-            writer.println("UserID: " + element.getKey() + " Balance: " + element.getValue());
+            fileWriter.println("UserID: " + element.getKey() + " Balance: " + element.getValue());
         }
-        writer.close();
+        fileWriter.close();
     }
 }

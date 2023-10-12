@@ -1,0 +1,2 @@
+UserID: clairesaccount Balance: 600.0
+UserID: mikesaccount Balance: 880.0
